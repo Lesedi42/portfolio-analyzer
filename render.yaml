@@ -1,13 +1,25 @@
-services:
-  - type: web
-    name: portfolio-analyzer
-    env: node
-    buildCommand: npm install
-    startCommand: npm start
-    envVars:
-      - key: PORT
-        value: 3000
-      - key: WALLET_ADDRESS
-        sync: false
+# Exported from Render on 2026-05-04T06:15:46Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: portfolio-analyzer
+      runtime: node
+      repo: https://github.com/Lesedi42/portfolio-analyzer
+      plan: free
+      envVars:
       - key: NODE_ENV
-        value: production
+        sync: false
+      - key: PORT
+        sync: false
+      - key: Value
+        sync: false
+      - key: Key
+        sync: false
+      region: frankfurt
+      buildCommand: npm install
+      startCommand: npm start
+      autoDeployTrigger: commit
