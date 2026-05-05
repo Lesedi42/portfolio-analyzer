@@ -39,7 +39,7 @@ Use [cron-job.org](https://cron-job.org) — free cron service:
 
 ```
 PORT=3000                          # set automatically by Render
-WALLET_ADDRESS=0x1db618e6bfc35bd48b91431a55c4948b27e7a539        # your payment receiving wallet
+WALLET_ADDRESS=0xYourWallet        # your payment receiving wallet
 NODE_ENV=production
 ```
 
